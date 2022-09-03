@@ -1,0 +1,8 @@
+[
+    {    "nombre":"Quigon", "precio": 20, "id": 1, "imgSrc": "./img/Jedi1.JPG"},
+    {    "nombre":"Luke", "precio": 50, "id": 2, "imgSrc": "./img/Jedi2.JPG"},
+    {    "nombre":"Ahsoka", "precio": 30, "id": 3, "imgSrc": "./img/Jedi3.JPG"},
+    {    "nombre":"Sidious", "precio": 20, "id": 4, "imgSrc": "./img/Sith1.JPG"},
+    {    "nombre":"Vader", "precio": 50, "id": 5, "imgSrc": "./img/Sith2.jfif"},
+    {    "nombre":"Maul", "precio": 30, "id": 6, "imgSrc": "./img/Sith3.JPG"}
+]

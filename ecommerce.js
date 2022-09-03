@@ -1,15 +1,20 @@
 // Un carrito de productos que suma y hace subtotales para pagar es JS
 
-// Productos a la venta
 
-const Productos = [
-{    nombre:"Quigon", precio: 20, id: 1, imgSrc: "./img/Jedi1.JPG"},
-{    nombre:"Luke", precio: 50, id: 2, imgSrc: "./img/Jedi2.JPG"},
-{    nombre:"Ahsoka", precio: 30, id: 3, imgSrc: "./img/Jedi3.JPG"},
-{    nombre:"Sidious", precio: 20, id: 4, imgSrc: "./img/Sith1.JPG"},
-{    nombre:"Vader", precio: 50, id: 5, imgSrc: "./img/Sith2.jfif"},
-{    nombre:"Maul", precio: 30, id: 6, imgSrc: "./img/Sith3.JPG"},
-]
+document.addEventListener("DOMContentLoaded", () => {
+    fetchData()
+})
+
+const fetchData = async () => {
+    try {
+        const respuesta = await fetch('api.json')
+        const productos = await respuesta.json()
+        // console.log(productos)
+        mostrarProductos(productos)
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 // Tomo mis elementos del DOM para poder mostrar en la web
 
@@ -23,8 +28,8 @@ let carritoSuma = [];
 
 const productsHTML = document.querySelector(".productos");
 
-function mostrarProductos() {
-    Productos.forEach((producto) => {
+function mostrarProductos(productos) {
+    productos.forEach((producto) => {
         productsHTML.innerHTML += `
         <section class="Productos">
         <div class="Producto">
@@ -36,8 +41,6 @@ function mostrarProductos() {
           `;
     });
   }
-
-  mostrarProductos();
 
 // Aqui armo el carrito segun lo que escoja el usuario
 class carrito {
@@ -119,6 +122,8 @@ rango.onchange = () => {
         })
     }
 } 
+
+// Mensaje para felicitarlo por su compra
 
 function alertaCompra(){
     swal('¡Gracias por tu compra!', 'Pero registrate primero','success')
