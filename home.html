@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="css/Home.css">
+</head>
+<body>
+
+    <div class=".grid-container">
+        <header>
+            <nav class="grid-container Menu">
+                <a href="#Productos">Productos</a>
+                <a href="#test-Jedi">Test</a>
+                <a href="#RedesSociales">Redes Sociales</a>
+            </nav>
+        </header>
+    
+        
+        <main class="jedi-main">
+            <div class="Jedi" id="Introduccion">
+                <img src="" alt="">
+            </div>
+            <h1 id="Introduccion2">Star Wars</h1>
+            <div class="Descripcion" id="Introduccion3">
+                Bienvenido a la mejor tienda de funkos coleccionables de esta increible franquicia
+            </div>
+
+            <h2 id="CambioTitulo">Funkos Coleccionables</h2>
+            <article id="Introduccion4">
+                «Por más de cientos de generaciones, los Caballeros Jedi fueron los guardianes de la paz y la justicia en la Antigua República.»
+                ―Obi-Wan Kenobi
+            </article>
+
+            <h3 class="FiltroPrecioTitulo" id="FiltroPrecioTitulo">Puedes filtrar aqui por precio:</h3>
+            <section class="FiltroPrecio" id="FiltroPrecio">
+                <input type="range" class="range" min="0" max="50" id="Rango">
+                <p id="MostrarRango"></p>
+            </section>
+
+            <div class="productosFiltrados">
+                <!-- Productos filtrados se muestran aqui -->
+            </div>
+
+            <div class="productos">
+                <!-- Productos se muestran aqui -->
+            </div>
+              
+            <section class="Carrito">
+                <div class="Pago">
+                    <h3>Carrito de Compras</h3>
+                    <p class= "mostrarTotal" id="mostrarTotal"></p>
+                    <a onclick=alertaCompra() class = "mostrarTotal2" id="mostrarTotal2"></a>
+                </div>
+            </section>
+        </main>
+    
+        <section id="RedesSociales" class="grid-container">
+            <a href="https://github.com/MeryDeFreitas" class="Github" target="_blank"></a>
+            <a href="https://twitter.com/MeryDeFreitas" class="Twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/merydefreitas/" class="Instagram" target="_blank"></a>
+        </section>
+    </footer>
+    </div>
+
+    <script src="ecommerce.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</body>
+</html>

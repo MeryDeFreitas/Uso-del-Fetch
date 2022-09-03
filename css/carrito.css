@@ -1,0 +1,50 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url('../img/stormtrooper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.ContenedorBig{
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorCarrito{ 
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.ContenedorMetodosDePago{
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.countdown{
+    text-align: end;
+}
+
