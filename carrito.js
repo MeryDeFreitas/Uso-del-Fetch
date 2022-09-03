@@ -10,7 +10,7 @@ document.getElementById('countdown').innerHTML = "Tienes " + totalTime + " segun
     if(totalTime==0){
       swal('Tiempo para el  Pago', '¡Lo siento, Se te acabó el tiempo!','error')
       .then(() => {
-    document.location.reload();  //Va a reiniciar el juego
+    document.location.reload();  //Va a reiniciar el reloj
     }) }else{
         totalTime-=1;         //De lo contrario que ande el reloj y reste uno
         setTimeout("updateClock()",1000);
